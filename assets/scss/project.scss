@@ -3,6 +3,8 @@ $global-link-color: #4671FD;
 $global-font-family: 'Merriweather', serif;
 $global-font-size: 18px;
 $global-xxlarge-font-size: 48px;
+// $base-h1-font-size-m: $global-xxlarge-font-size;
+// $base-h1-font-size: $base-h1-font-size-m * 0.6;
 $base-h1-line-height: 1.25;
 $subnav-item-color: $global-link-color;
 $subnav-item-hover-color: $global-link-color;
@@ -21,6 +23,10 @@ $base-em-color: #000;
   em {
     font-weight: bold;
   }
+}
+
+@mixin hook-base-h1(){
+  
 }
 
 // 4. Import UIkit.
