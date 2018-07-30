@@ -1,0 +1,31 @@
+// 1. Your custom variables and variable overwrites.
+$global-link-color: #4671FD;
+$global-font-family: 'Merriweather', serif;
+$global-font-size: 18px;
+$global-xxlarge-font-size: 48px;
+$base-h1-line-height: 1.25;
+$subnav-item-color: $global-link-color;
+$subnav-item-hover-color: $global-link-color;
+$subnav-item-active-color: $global-link-color;
+$base-link-text-decoration: underline;
+$subnav-item-hover-text-decoration: $base-link-text-decoration;
+$base-em-color: #000;
+
+// 2. Import default variables and available mixins.
+@import "../../node_modules/uikit/src/scss/variables.scss";
+@import "../../node_modules/uikit/src/scss/mixins.scss";
+
+// 3. Your custom mixin overwrites.
+// @mixin hook-card() { color: #000; }
+@mixin hook-base-body(){
+  em {
+    font-weight: bold;
+  }
+}
+
+// 4. Import UIkit.
+@import "../../node_modules/uikit/src/scss/uikit.scss";
+
+// 5. Everything else
+@import 'base/all';
+@import 'blocks/all';

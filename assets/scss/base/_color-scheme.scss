@@ -1,0 +1,44 @@
+$textSelectors: "&, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, em";
+$transition: all .5s ease-in-out;
+
+.color-scheme {
+  transition: $transition;
+
+  #{$textSelectors} {
+    transition: $transition;
+  }
+}
+
+.color-scheme--1 {
+  background-color: #f9f7ef;
+
+  #{$textSelectors} {
+    color: #484AB3;
+  }
+
+}
+
+.color-scheme--2 {
+  background-color: #322F7C;
+
+  #{$textSelectors} {
+    color: #FF757D;
+  }
+
+}
+
+.color-scheme--3 {
+  background-color: #422B8E;
+
+  #{$textSelectors} {
+    color: #B8CFFF;
+  }
+}
+
+.color-scheme--4 {
+  background-color: #E1E7F3;
+
+  #{$textSelectors} {
+    color: #00A697;
+  }
+}

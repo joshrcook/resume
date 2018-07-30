@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "./node_modules/.bin/parcel serve index.html",
+    "build": "./node_modules/.bin/parcel build index.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "parcel-bundler": "^1.9.7"
+    "basicscroll": "^2.1.1",
+    "in-view": "^0.6.1",
+    "parcel-bundler": "^1.9.7",
+    "uikit": "^3.0.0-rc.10"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.2"
   }
 }

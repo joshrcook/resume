@@ -1,0 +1,11 @@
+.work-item {
+
+  &__title {
+
+    a:after {
+      content: ' ⟶';
+    }
+
+  }
+
+} // .work-item
