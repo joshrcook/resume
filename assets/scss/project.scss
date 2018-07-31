@@ -3,8 +3,6 @@ $global-link-color: #4671FD;
 $global-font-family: 'Merriweather', serif;
 $global-font-size: 18px;
 $global-xxlarge-font-size: 48px;
-// $base-h1-font-size-m: $global-xxlarge-font-size;
-// $base-h1-font-size: $base-h1-font-size-m * 0.6;
 $base-h1-line-height: 1.25;
 $subnav-item-color: $global-link-color;
 $subnav-item-hover-color: $global-link-color;
@@ -12,6 +10,7 @@ $subnav-item-active-color: $global-link-color;
 $base-link-text-decoration: underline;
 $subnav-item-hover-text-decoration: $base-link-text-decoration;
 $base-em-color: #000;
+$animation-slow-duration: 1s;
 
 // 2. Import default variables and available mixins.
 @import "../../node_modules/uikit/src/scss/variables.scss";
@@ -26,7 +25,15 @@ $base-em-color: #000;
 }
 
 @mixin hook-base-h1(){
-  
+  @media (max-width: $breakpoint-xsmall-max) {
+    font-size: 32px;
+  }
+}
+
+@mixin hook-animation-misc() {
+  .uk-animation-slow {
+    animation-duration: $animation-slow-duration;
+  }
 }
 
 // 4. Import UIkit.
