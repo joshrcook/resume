@@ -1,0 +1,21 @@
+.form {
+
+  &__success {
+    display: none;
+  }
+
+}
+
+.form--success {
+
+  .form {
+
+    &__fields {
+      display: none;
+    }
+
+    &__success {
+      display: block;
+    }
+  }
+}

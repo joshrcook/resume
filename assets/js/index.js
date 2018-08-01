@@ -81,3 +81,14 @@ import UIkit from 'uikit';
   UIkit.scroll('.js-subnav a');
 }());
 
+// Handle form submissions
+(function() {
+  // Don't allow redirects on form submissions please
+  document.addEventListener('submit', (e) => {
+    e.preventDefault();
+  });
+
+  document.querySelector('.joshrcook-website-contact').addEventListener('submit', function(e) {
+    this.classList.add('form--success');
+  });
+}());
